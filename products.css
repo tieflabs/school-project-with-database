@@ -1,0 +1,441 @@
+@import url('assets/css/nave.css');
+/*link Online Audiowide font*/
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+/*link Online Poppins font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*All offline Poppins font*/
+@font-face {
+  font-family: 'Poppins';
+  /*src: url('assets/fonts/Poppins/Poppins-Black.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-BlackItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-BlackItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-BoldItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-ExtraBold.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-ExtraBoldItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-ExtraLight.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-ExtraLightItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-Italic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-Light.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-LightItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-Medium.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-MediumItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-Regular.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-SemiBold.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-SemiBoldItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-Thin.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-ThinItalic.ttf')  format('truetype');
+*/
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*All offline Jost fonts*/
+@font-face {
+  font-family: 'Jost';
+
+  src: url('assets/fonts/Jost/static/Jost-Black.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-BlackItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-Bold.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-BoldItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-ExtraBold.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-ExtraBoldItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-ExtraLight.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-ExtraLightItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-Italic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-Light.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-LightItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-Medium.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-MediumItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-Regular.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-SemiBold.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-SemiBoldItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-Thin.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-ThinItalic.ttf')  format('truetype');
+
+  src: url('assets/fonts/Jost/Jost-Italic-VariableFont_wght.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/Jost-VariableFont_wght.ttf')  format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*All offline Audiowide font*/
+@font-face {
+  font-family: 'Audiowide';
+
+  src: url('assets/fonts/Audiowide/Audiowide-Regular.ttf')  format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*All offline NovaMono font*/
+@font-face {
+  font-family: 'NovaMono';
+
+  src: url('assets/fonts/NovaMono/NovaMono-Regular.ttf')  format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*default page orgnization*/
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+ transition: 0.2s all;
+ scroll-behavior: smooth;
+}
+
+/*All variable color theme*/
+:root{
+  --main: black;
+  --gry: #d2d2d2;
+
+  --a: white;
+  --b: lavender;
+
+  --info: #83818c;
+  --error: red;
+  --good: #32ce28;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--a); 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main); 
+  border-radius: 4px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--b); 
+  border: 1px solid var(--main);
+  border-radius: 2px;
+}
+
+
+
+
+/*all pages css styled*/
+.page{
+	position: relative;
+	min-height: 100vh;
+}
+
+
+
+
+
+/*Product page*/
+.page.products{
+  height: 300vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  background: var(--b);
+}
+.products__title{
+  margin-top: 105px;
+  font-size: 30px;
+}
+
+/*products Conatiner*/
+.products__conatiner{
+  position: absolute;
+  width: 100%;
+  margin-top: 170px;
+  display: flex;
+  justify-content: center;
+}
+
+/*Product Box*/
+.product__box{
+  position: relative;
+  height: 460px;
+  width: 300px;
+  background: var(--a);
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+.product__image{
+  width: 100%;
+  height: 60%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.product__info{
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  overflow: hidden;
+}
+.product__name{
+  position: absolute;
+  font-size: 20px;
+  margin-top: -50px;
+}
+.product__about{
+	position: absolute;
+	font-size: 12px;
+   margin: 50px 20px 0px 10px;
+   font-weight: 500;
+   color: var(--main);
+}
+
+/*Rating Star*/
+.rating__cover{
+  position: absolute;
+  width: 80%;
+  height: 40px;
+  color: var(--a);
+  margin-top: 140px;
+  gap: 10px;
+}
+.stars{
+	font-size: 15px;
+	color: var(--main);
+}
+.stars__resoult{
+	font-size: 13px;
+	color: var(--main);
+}
+
+
+/*products buttons cover*/
+.product__buttons{
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  bottom: 1px;
+}
+
+.price__box{
+  position: absolute;
+  font-size: 17px;
+  color: var(--main);
+  top: 20px;
+  cursor: pointer;
+/*  background: var(--b);*/
+  height: 40px;
+  font-weight: 800;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px;
+} 
+.purchase__button{
+  position: absolute;
+  bottom: 5px;
+  height: 40px;
+  width: 60%;
+  font-size: 15px;
+  color: var(--a);
+  cursor: pointer;
+  background: var(--main);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  top: 60px;
+}
+.purchase__button:active{
+		scale: 110%;
+}
+
+@media (max-width: 900px) {
+ .products__conatiner {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-right: 0;
+     gap: 20px;
+  } 
+}
+
+/*h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 18px;
+    color: var(--e);
+    line-height: 1.6;
+  }
+.about-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+.info-item {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-right: 20px;
+  }
+.info-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+    */
+
+.body-fixed__cart-box{
+	position: fixed;
+	display: none;
+	height: 90px;
+	width: 500px;
+	background: var(--a);
+	z-index: 1000;
+	bottom: 40px;
+	border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--b);
+    backdrop-filter: blur(5.5px);
+ 
+	
+}
+.body-fixed_cart{
+    position: absolute;
+	width: 60px;
+	height: 60px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--b);
+    backdrop-filter: blur(5.5px);
+    --webkit-backdrop-filter: blur(5.5px);
+	border-radius: 10px;
+	left: 20px;
+	margin-top: 15px;
+
+}
+
+.quantity{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	border-radius: 50px;
+	background: var(--error);
+	left: 60px;
+	top: -10px;
+	font-family: 'Poppins';
+	cursor: pointer;
+}
+.addedin{
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	border-radius: 50px;
+	background: var(--main);
+	left: 70px;
+	top: 12px;
+	font-family: 'Poppins';
+	cursor: pointer;
+}
+
+.total__price{
+	position: absolute;
+	margin-left: 100px;
+	font-weight: 500;
+	margin-top: 30px;
+
+}
+.chekout__button{
+	position: absolute;
+	height: 60px;
+	width: 200px;
+	right: 20px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	gap: 10px;
+	font-size: 20px;
+	border-radius: 10px;
+	outline: none;
+	background: var(--main);
+    border: 2px solid var(--a);
+	color: var(--a);
+	cursor: pointer;
+	margin-top: 15px;
+
+}
+.chekout__button:active{
+	scale: 110%;
+}
+
+.cart__add-remove{
+	position: absolute;
+	height: 100px;
+	width: 50px;
+	right: 15px;
+	top: 10px;
+}
+.addTocart__button{
+	position: absolute;
+	height: 45px;
+	width: 45px;
+	margin-top: -50px;
+	background: var(--main);
+	color: var(--a);
+	border-radius: 10px;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	display: none;
+
+}
+.addTocart__button:active{
+	scale: 140%;
+}
+
+
+.product__box:hover .addTocart__button{
+	display: block;
+	display: flex;
+}
+
+.removefromcart__button{
+    position: absolute;
+	height: 45px;
+	width: 45px;
+	margin-top: 50px;
+	background: var(--main);
+	color: var(--a);
+	border-radius: 10px;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	display: none;
+
+}
+.removefromcart__button:active{
+	scale: 140%;
+}
+
+.cart__add-remove:hover .removefromcart__button{
+	display: block;
+	display: flex;
+}
+
+/*.cart__add-remove:is(:hover) ~ .removefromcart__button{
+	display: block;
+	display: flex;
+
+}*/
+
+/*.product__box:hover .removefromcart__button{
+	display: block;
+	display: flex;
+}*/

@@ -1,0 +1,582 @@
+/*link Online Audiowide font*/
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+/*link Online Poppins font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*All offline Poppins font*/
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/Poppins/Poppins-Black.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-BlackItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-BlackItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-BoldItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-ExtraBold.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-ExtraBoldItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-ExtraLight.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-ExtraLightItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-Italic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-Light.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-LightItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-Medium.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-MediumItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-Regular.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-SemiBold.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-SemiBoldItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-Thin.ttf')  format('truetype');
+  src: url('assets/fonts/Poppins/Poppins-ThinItalic.ttf')  format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*All offline Jost fonts*/
+@font-face {
+  font-family: 'Jost';
+
+  src: url('assets/fonts/Jost/static/Jost-Black.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-BlackItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-Bold.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-BoldItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-ExtraBold.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-ExtraBoldItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-ExtraLight.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-ExtraLightItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-Italic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-Light.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-LightItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-Medium.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-MediumItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-Regular.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-SemiBold.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-SemiBoldItalic.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-Thin.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/static/Jost-ThinItalic.ttf')  format('truetype');
+
+  src: url('assets/fonts/Jost/Jost-Italic-VariableFont_wght.ttf')  format('truetype');
+  src: url('assets/fonts/Jost/Jost-VariableFont_wght.ttf')  format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*All offline Audiowide font*/
+@font-face {
+  font-family: 'Audiowide';
+
+  src: url('assets/fonts/Audiowide/Audiowide-Regular.ttf')  format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*All offline NovaMono font*/
+@font-face {
+  font-family: 'NovaMono';
+
+  src: url('assets/fonts/NovaMono/NovaMono-Regular.ttf')  format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*default page orgnization*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+  transition: 0.2s all;
+  scroll-behavior: smooth;
+}
+
+/*Css variables for colors themes */
+:root{
+  --main: black;
+  --gry: #d2d2d2;
+
+  --a: white;
+  --b: lavender;
+
+  --info: #83818c;
+  --error: red;
+  --good: #32ce28;
+}
+body{
+  background: var(--b);
+/*  height: 600px;*/
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--a); 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main); 
+  border-radius: 4px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--b); 
+  border: 1px solid var(--main);
+  border-radius: 2px;
+}
+/*all pages css styled*/
+.page{
+	position: relative;
+	min-height: 100vh;
+}
+/*top navigation bar*/
+.nav__bar{
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Hero Page*/
+.hero{
+	background: var(--a);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  border-radius: 30px;
+  border: 6px solid var(--b);
+}
+.hero__content{
+	position: absolute;
+	height: 75vh;
+	width: 90%;
+	bottom: 20px;
+ 	background: var(--b);
+  border-radius: 30px;
+  overflow: hidden;
+}
+.hero__image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("assets/imgs/hero.png");
+  transform: rotate(-50deg);
+  left: 20%;
+  bottom: -18%;
+  transition: 0.5s;
+}
+.sub-hero__box{
+  position: absolute;
+  border: 1px solid var(--main);
+  height: 200px;
+  width: 200px;
+  top: 70%;
+  right: 400px;
+  border-radius: 20px;
+  transform: rotate(50deg);
+  overflow: hidden;
+  transition: 1.5s;
+}
+.sub-hero__image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.sub-hero__image:hover{
+  scale: 90%;
+  border-radius: 20px;
+}
+.hero__info{
+	position: absolute;
+	height: 70%;
+	width: 50%;
+	bottom: 20px;
+	margin: 20px;
+/*  background: red;*/
+}
+.hero__title{
+	/*margin: 250px 30px;*/
+	font-size: 50px;
+	font-family:'Audiowide', sans-serif;
+}
+.hero__text{
+	font-size: 18.5px;
+  margin: 40px 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: var(--main);
+} 
+
+.hero__button{
+  position: absolute;
+	height: 50px;
+	width: 230px;
+
+	border-radius: 15px;
+	border: 2px solid var(--a);
+	background: var(--main);
+  font-size: 20px;
+}
+.hero__button:hover{
+  background: transparent;
+  border: 2px solid var(--main);
+}
+.order_now{
+  position: absolute;
+	color: var(--a);
+}
+.order_now i{
+  margin-left: 10px;
+  transform: rotate(136deg);
+}
+.hero__button:hover .order_now{
+	color: var(--main);
+}
+
+
+
+
+
+
+/*Product page*/
+.page.products{
+  height: 300vh;
+	display: flex;
+	justify-content: center;
+}
+.products__title{
+	margin-top: 105px;
+	font-size: 30px;
+}
+.products__conatiner{
+	position: absolute;
+	height: 100vh;
+	width: 90%;
+	margin-top: 170px;
+	display: flex;
+	justify-content: center;
+}
+.product__box{
+	position: relative;
+	height: 450px;
+	width: 320px;
+	background: var(--a);
+	border-radius: 10px;
+	margin: 20px 10px;
+	overflow: hidden;
+}
+.product__image{
+	width: 100%;
+	height: 55%;
+}
+.product__info{
+	width: 100%;
+	height: 240px;
+	text-align: start;
+}
+.product__name{
+	font-size: 25px;
+	margin: 0px 20px;
+}
+.product__about{
+	font-size: 17px;
+	margin: 10px 20px;
+}
+.product__buttons{
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  bottom: 1px;
+}
+.price__button, .purchase__button{
+	font-size: 17px;
+  color: var(--a);
+	cursor: pointer;
+  background: var(--main);
+  height: 40px;
+  width: 110px;
+	margin: 15px 10px;
+	outline: none;
+	border: none;
+  border-radius: 10px;
+	font-weight: 600;
+
+}
+.product__button:hover{
+	gap:  10px;
+	font-weight: 600;
+	transition: 0.9s all;
+}
+h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 18px;
+    color: var(--gry);
+    line-height: 1.6;
+  }
+.about-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+.info-item {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-right: 20px;
+  }
+.info-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@media (max-width: 768px) {
+     .info-item {
+      flex-basis: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+  } 
+}
+
+
+
+
+
+  
+/*  Footer contacts started here*/
+.page.contact{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  background: var(--main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+}
+.footer__container{
+  position: absolute;
+  height: 100%;
+  width: 90%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.help__list{
+  position: absolute;
+  height: 50%;
+  width: 300px;
+  background: transparent;
+  left: 0;
+  margin-top: 100px;
+}
+.shop_Vist__list{
+  position: absolute;
+  height: 50%;
+  width: 300px;
+  background: transparent;
+  left: 300px;
+  margin-top: 100px;
+}
+.legal__list{
+  position: absolute;
+  height: 50%;
+  width: 300px;
+  background: transparent;
+  left: 600px;
+  margin-top: 100px;
+}
+.title__list{
+  color: var(--a);
+  margin-bottom: 10px;
+  font-family:'Audiowide', sans-serif;
+  font-size: 30px;
+}
+ul{
+  list-style: none;
+}
+li{
+  margin-top: 10px;
+}
+a{
+  text-decoration: none;
+  color: var(--info);
+}
+a:hover{
+  color: var(--b);
+}
+
+/*Get in thouch*/
+.footer__newsletter-footer__social{
+  position: absolute;
+  height: 60%;
+  width: 380px;
+  right: 0;
+  top: 100px;
+}
+.title__footer__newsletter-footer__social {
+  color: var(--a);
+  text-align: center;
+  margin-bottom: -50px;
+
+}
+
+.footer__social{
+  position: absolute;
+  height: 80px;
+  width: 400px;
+  top: 40px;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social{
+  position: relative;
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  border: 2px solid var(--main);
+  background: var(--main);
+  color: var(--a);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.social:hover{
+  border: 2px solid;
+  scale: 105%;
+  color: var(--main);
+  background: var(--a);
+}
+
+
+.contacts__box{
+  position: absolute;
+  margin: 150px 0;
+  height: 90px;
+  width: 100%;
+}
+.footer__form-header{
+  position: absolute;
+  top: 0;
+  font-size: 15px;
+  color: var(--info);
+}
+
+.footer__form{
+  position: absolute;
+  height: 55%;
+  width: 100%;
+  bottom: 0;
+  background: transparent;
+}
+.footer__form .field{
+  position: relative;
+  height: 40px;
+  width: 65%;
+  padding: 18px;
+  font-size: 20px;
+  outline-style: none;
+  border-radius: 10px;
+  border: 2px solid var(--info);
+  background: transparent;
+  color: var(--a);
+  font-family: 'Jost', sans-serif;
+}
+.footer__form .field:hover{
+  border: 2px solid var(--b);
+  background: transparent;
+}
+
+/*Action button*/
+.footer__form .acting{
+  position: relative;
+  height: 40px;
+  width: 30%;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: var(--main);
+  color: var(--a);
+  transition: 0.5s all;
+  border: 2px solid var(--a);
+  font-weight: 600;
+
+}
+.footer__form .acting:hover{
+  color: var(--main);
+  background: var(--a);
+
+}
+
+/*new updated logo | footer logo*/
+.box__logo.footer_branding{
+   position: absolute;
+   height: 60px;
+   width: 100%;
+   bottom: 20px;
+   z-index: 1000;
+   cursor: pointer;
+   background: transparent;
+}
+.footer_branding .C-shop__brand{
+  position: absolute;
+  width: 160px;
+  height: 50px;
+}
+.footer_branding .C-shop__brand .c-shop__icon{
+  height: 50px;
+  width: 50px;
+}
+.footer_branding .C-shop__brand .c-shop__icon-layer1{
+  fill: var(--a);
+}
+.footer_branding .C-shop__brand .c-shop__text{
+  position: absolute;
+  font-size: 35px;
+  left: 45px;
+  color: var(--a);
+  font-weight: 700;
+}
+
+
+/*Coppyright bottom information*/
+.bottom__line{
+  position: absolute;
+  width: 100%;
+  bottom: 70px;
+}
+.copyright{
+  position: absolute;
+  color: var(--info);
+  bottom: 2%;
+  text-align: center;
+  cursor: pointer;
+}
+.copyright span{
+  color: var(--gry);
+}
